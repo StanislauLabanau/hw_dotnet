@@ -6,20 +6,20 @@ namespace Task1
     { 
         static void Main(string[] args)
         {
-            sbyte NumSbyte = -5;
-            short NumShort = NumSbyte;
-            int NumInt = NumShort;
-            long NumLong = NumInt;
-            Console.WriteLine($" implicit conversion: \n sbyte {NumSbyte} to short {NumShort} to int {NumInt} to long {NumLong}");
+            sbyte numSbyte = -5;
+            short numShort = numSbyte;
+            int numInt = numShort;
+            long numLong = numInt;
+            Console.WriteLine($" implicit conversion result: \n sbyte {numSbyte} to short {numShort} to int {numInt} to long {numLong}");
 
-            ulong NumUlong = (ulong) NumLong;
-            NumSbyte = (sbyte) NumUlong;
-            float NumFloat = 10f/3;
-            NumInt = (int) NumFloat;
-            object ObjectInt = NumInt;
-            NumInt = (int) ObjectInt;
-            Console.WriteLine($" explicit conversion: \n long {NumLong} to ulong {NumUlong} to sbyte {NumSbyte} \n float {NumFloat} to int {NumInt}");
-            Console.WriteLine($" boxing: int {NumInt} to object {ObjectInt} \n unboxing: object {ObjectInt} to int {NumInt}");
+            ulong numUlong = (ulong) numLong;
+            numSbyte = (sbyte) numUlong;
+            float numFloat = 10f/3;
+            numInt = (int) numFloat;
+            object objectInt = numInt;
+            numInt = (int) objectInt;
+            Console.WriteLine($" explicit conversion result: \n long {numLong} to ulong {numUlong} to sbyte {numSbyte} \n float {numFloat} to int {numInt}");
+            Console.WriteLine($" boxing result: int {numInt} to object {objectInt} \n unboxing result: object {objectInt} to int {numInt}");
             Console.ReadLine();
         }
     }
